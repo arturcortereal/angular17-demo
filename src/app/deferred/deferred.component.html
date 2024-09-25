@@ -1,0 +1,14 @@
+<div class="deferred">
+  <button mat-button #loadButton>Click Me</button>
+  @defer (on immediate) {
+  <!-- @defer(on hover(loadButton)) {
+  @defer (on interaction(loadButton)) { -->
+    <p>Component has been loaded</p>
+  } @placeholder {
+    <p>Placeholder</p>
+  } @loading (minimum 4000) {
+    <mat-spinner></mat-spinner>
+  } @error {
+    <p>Error</p>
+  }
+</div>

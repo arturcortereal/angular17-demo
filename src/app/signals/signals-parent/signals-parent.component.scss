@@ -1,0 +1,18 @@
+.button-section {
+    margin-top: 20px;
+}
+
+.increment-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.increment-button:hover {
+    background-color: #218838;
+}

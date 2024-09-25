@@ -1,0 +1,67 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+* {
+  color: white;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  /* Max width for the entire app */
+  padding: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+
+  img {
+    max-width: 300px;
+    /* Ensures the image scales */
+    height: auto;
+    /* Keeps the aspect ratio */
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.content-wrapper {
+  text-align: center;
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.custom-button {
+  background-color: #6200ea;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-button:hover {
+  background-color: #3700b3;
+  transform: translateY(-2px);
+}

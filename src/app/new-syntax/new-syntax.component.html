@@ -1,0 +1,30 @@
+<!-- Loop through the list of frameworks and display buttons for each one using the @for directive -->
+@for (framework of items(); track framework) {
+  <button mat-button (click)="selectFramework(framework)">
+    {{ framework }}
+  </button>
+} @empty {
+  The list is empty
+}
+
+@if (items().length) {
+  <!-- Conditionally display a message when a framework is selected using the @if directive -->
+  @if (selectedFramework()) {
+    <p>You selected: {{ selectedFramework() }}</p>
+  } @else {
+    <p>Please select a framework</p>
+  }
+
+  <!-- Use @switch to display a specific message depending on the selected framework -->
+  @switch (selectedFramework()) {
+    @case ("Angular") {
+      <p>Angular is a powerful framework!</p>
+    }
+    @case ("React") {
+      <p>React is component-based!</p>
+    }
+    @default {
+      <p>Other framework selected!</p>
+    }
+  }
+}
